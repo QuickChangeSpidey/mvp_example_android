@@ -4,6 +4,7 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 import login.LoginActivity;
+import login.LoginModule;
 
 /**
  * Created by akshay on 12/10/17.
@@ -11,7 +12,7 @@ import login.LoginActivity;
 
 
 @Singleton
-@Component(modules = ApplicationModule.class)
+@Component(modules = {ApplicationModule.class, LoginModule.class})
 public interface ApplicationComponent {
 
 

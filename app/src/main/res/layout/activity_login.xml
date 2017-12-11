@@ -16,14 +16,14 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            android:id="@+id/user_id"/>
+            android:hint="First Name"
+            android:id="@+id/firstname"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="password"
-            android:id="@+id/pass"/>
+            android:hint="Last Name"
+            android:id="@+id/lastname"/>
 
         <LinearLayout
             android:layout_width="match_parent"
