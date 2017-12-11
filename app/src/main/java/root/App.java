@@ -2,8 +2,6 @@ package root;
 
 import android.app.Application;
 
-import com.example.akshay.mvp_example_android.DaggerApplicationComponent;
-
 import login.LoginModule;
 
 /**
