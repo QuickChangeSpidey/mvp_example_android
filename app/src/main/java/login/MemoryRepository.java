@@ -11,8 +11,8 @@ public class MemoryRepository implements LoginRepository {
     @Override
     public User getUser() {
 
-        if(user==null){
-            User user = new User("Fox", "Muler");
+        if(user == null){
+            User user = new User("Fox", "Muller");
             user.setId(0);
             return user;
         }
