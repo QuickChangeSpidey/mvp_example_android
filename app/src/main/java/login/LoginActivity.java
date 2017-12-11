@@ -49,6 +49,7 @@ public class LoginActivity extends Activity implements LoginActivityMVP.View {
     protected void onResume() {
         super.onResume();
         presenter.setView(this);
+        presenter.getCurrentUser();
     }
 
     @Override
