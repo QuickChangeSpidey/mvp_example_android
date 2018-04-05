@@ -21,7 +21,6 @@ public class App extends Application {
                     .applicationModule(new ApplicationModule(this))
                     .loginModule(new LoginModule())
                     .build();
-
     }
 
 
