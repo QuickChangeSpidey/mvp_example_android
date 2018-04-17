@@ -50,5 +50,9 @@ public class LoginActivityPresenter implements LoginActivityMVP.Presenter {
             }
         }
 
+        else {
+            view.showUserNotAvailable();
+        }
+
     }
 }
