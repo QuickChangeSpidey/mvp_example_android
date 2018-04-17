@@ -35,14 +35,12 @@ public class LoginActivity extends Activity implements LoginActivityMVP.View {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         ((App)getApplication()).getApplicationComponent().inject(this);
-
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 presenter.loginbuttonClicked();
             }
         });
-
     }
 
     @Override
@@ -54,50 +52,36 @@ public class LoginActivity extends Activity implements LoginActivityMVP.View {
 
     @Override
     public String getFirstName() {
-
         return fname.getText().toString();
-
     }
 
     @Override
     public String getLastName() {
-
         return lname.getText().toString();
     }
 
     @Override
     public void setFirstName(String firstName) {
-
         fname.setText(firstName);
-
     }
 
     @Override
     public void setLastName(String lastName) {
-
         lname.setText(lastName);
     }
 
     @Override
     public void showUserNotAvailable() {
-
         Toast.makeText(this, "User Not available",Toast.LENGTH_LONG).show();
-
     }
 
     @Override
     public void showUserAdded() {
-
         Toast.makeText(this, "User added",Toast.LENGTH_LONG).show();
-
-
     }
 
     @Override
     public void showInputError() {
-
         Toast.makeText(this, "First name and Last name cannot be empty",Toast.LENGTH_LONG).show();
-
-
     }
 }
